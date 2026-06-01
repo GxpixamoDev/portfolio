@@ -26,9 +26,7 @@ const Navbar = () => {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'glass' : 'bg-transparent'
-      }`}
+      className={isScrolled ? 'fixed top-0 w-full z-50 glass transition-all duration-300' : 'fixed top-0 w-full z-50 bg-transparent transition-all duration-300'}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
         {/* Logo */}
